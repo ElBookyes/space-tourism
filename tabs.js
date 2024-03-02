@@ -39,10 +39,12 @@ function changeTabFocus(e) {
 function changeTabPanel(e) {
     const targetTab = e.target;
     const targetPanel = targetTab.getAttribute("aria-controls");
+    console.log(targetPanel);
     const targetImage = targetTab.getAttribute("data-image");
+    console.log(targetImage);
     
-    const tabContainer = targetTab.parentNode;
-    const mainContainer = tabContainer.parentNode;
+    const tabContainer = (targetTab.parentNode).parentNode;
+    const mainContainer = (tabContainer.parentNode).parentNode;
     
     tabContainer
         .querySelector('[aria-selected="true"]')
