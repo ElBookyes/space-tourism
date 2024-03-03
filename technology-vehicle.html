@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="technology-vehicle.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fonts.coollabs.io/css2?family=Bellefair&family=Jost&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="brand-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+      </div>
+
+      <nav class="site-nav">
+
+        <ul class="primary-navigation | display-flex fs-300" id="primary-navigation" role="list">
+          <li class="nav-list-item | display-flex">
+            <span>00</span> <a href="index.html" data-state="false">HOME</a>
+          </li>
+          <li class="nav-list-item | display-flex">
+            <span>01</span> <a href="destination-moon.html" data-state="false">DESINATION</a>
+          </li>
+          <li class="nav-list-item | display-flex">
+            <span>02</span> <a href="crew-commander.html" data-state="false">CREW</a>
+          </li>
+          <li class="nav-list-item | display-flex">
+            <span>03</span> <a href="technology-vehicle.html" data-state="true">TECHNOLOGY</a>
+          </li>
+        </ul>
+
+        <button class="ham-menu" 
+             aria-controls="sidebar-container"
+             aria-expanded="false">
+          <span class="visually-hidden">Menu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd" class="hamburger" aria-hidden="true"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
+        </button>
+
+      </nav>
+    </div>
+
+    <div class="sidebar">
+      <div data-state="closed" class="sidebar-container " id="sidebar-container">
+          <div class="sidebar-header | display-flex">
+            <button class="close-button" aria-controls="sidebar-container" aria-expanded="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
+            </button>
+          </div>
+          <div class="sidebar-main">
+              <ul class="sidebar-menu | fs-500" role="list">
+                <li class="sidebar-menu-item | display-flex">
+                  <span>00</span> <a href="index.html">HOME</a>
+                </li>
+                <li class="sidebar-menu-item | display-flex">
+                  <span>01</span> <a href="destination-moon.html">DESTINATION</a>
+                </li>
+                <li class="sidebar-menu-item | display-flex">
+                  <span>02</span> <a href="crew-commander.html">CREW</a>
+                </li>
+                <li class="sidebar-menu-item | display-flex">
+                  <span>03</span> <a href="technology-vehicle.html">TECHNOLOGY</a>
+                </li>
+              </ul>
+          </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-section | even-columns">
+      
+      <div class="section-title | text-neutral">
+        <span>03</span> SPACE LAUNCH 101
+      </div>
+
+      <div class="image-section">
+      </div>
+
+      <div class="main-content | even-columns text-center">
+        <ul class="technology-menu | grid-flow text-accent" role="list">
+          <li class="technology-menu-item" data-state="true">
+            <a href="">1</a>
+          </li>
+          <li class="technology-menu-item">
+            <a href="">2</a>
+          </li>
+          <li class="technology-menu-item">
+            <a href="">3</a>
+          </li>
+        </ul>
+
+        <div class="technology-info">
+          <div class="technology-description">
+            <span>THE TERMINOLOGY...</span>
+            <h1 class="fs-heading-5 text-neutral">LAUNCH VEHICLE</h1>
+            <div class="technology-description-p | even-columns">
+              <p class="text-accent fs-600">  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+                payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+                WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+                it's quite an awe-inspiring sight on the launch pad!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="nav.js"></script>
+</body>
+</html>
