@@ -415,7 +415,7 @@ main::before {
 }
 
 .main-section {
-  height: 100vh;
+  height: 100svh;
   padding-block: 6em 2em; 
 }
 
@@ -484,6 +484,23 @@ main::before {
   margin-inline: 1em;
   max-width: 50ch;
 }
+
+picture[aria-hidden="true"] {
+  display: none;
+}
+
+picture[aria-hidden="false"] {
+  display: block;
+}
+
+article[aria-hidden="true"] {
+  display: none;
+}
+
+article[aria-hidden="false"] {
+  display: block;
+}
+
 
 
 

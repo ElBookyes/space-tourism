@@ -73,43 +73,74 @@
   </header>
 
   <main>
-    <div class="main-section | even-columns">
+    <section class="main-section | even-columns">
       
-      <div class="section-title | text-neutral">
+      <h1 class="section-title | text-neutral">
         <span>03</span> SPACE LAUNCH 101
-      </div>
+      </h1>
 
-      <div class="image-section">
-      </div>
+      <picture aria-hidden="false" class="technology-img" id="rocket-image">
+        <source srcset="/assets/technology/image-launch-vehicle-portrait.jpg"
+                type="image/webp"
+                media="(min-width: 1100px)">
+        <img src="assets/technology/image-launch-vehicle-landscape.jpg" alt="A rocket launch">
+      </picture>
+
+      <picture aria-hidden="true" class="technology-img" id="capsule-image">
+        <source src="/assets/technology/image-space-capsule-portrait.jpg"
+                type="image/webp"
+                media="(min-width: 1100px)">
+        <img src="assets/technology/image-space-capsule-landscape.jpg" alt="Space capsule">
+      </picture>
+
+      <picture aria-hidden="true" class="technology-img" id="spaceport-image">
+        <source src="/assets/technology/image-spaceport-portrait.jpg"
+                type="image/webp"
+                media="(min-width: 1100px)">
+        <img src="assets/technology/image-spaceport-landscape.jpg" alt="Spaceport">
+      </picture>
 
       <div class="main-content | even-columns text-center">
-        <ul class="technology-menu | grid-flow text-accent" role="list">
-          <li class="technology-menu-item" data-state="true">
-            <a href="">1</a>
-          </li>
-          <li class="technology-menu-item">
-            <a href="">2</a>
-          </li>
-          <li class="technology-menu-item">
-            <a href="">3</a>
-          </li>
-        </ul>
+        <div class="technology-menu | grid-flow text-accent" role="tablist" aria-label="technology list">
+          <button aria-selected="true" role="tab" aria-controls="rocket-tab" tabindex="0" data-state="true" data-image="rocket-image" class="technology-menu-item">1</button>
+          <button aria-selected="false" role="tab" aria-controls="capsule-tab" tabindex="-1" data-state="false" data-image="capsule-image" class="technology-menu-item">2</button>
+          <button aria-selected="false" role="tab" aria-controls="spaceport-tab" tabindex="-1" data-state="false" data-image="spaceport-image" class="technology-menu-item">3</button>
+        </div>
 
-        <div class="technology-info">
-          <div class="technology-description">
+          <article class="technology-description" aria-hidden="false" id="rocket-tab" role="tabpanel" tabindex="0">
             <span>THE TERMINOLOGY...</span>
-            <h1 class="fs-heading-5 text-neutral">LAUNCH VEHICLE</h1>
+            <h2 class="fs-heading-5 text-neutral">LAUNCH VEHICLE</h2>
             <div class="technology-description-p | even-columns">
               <p class="text-accent fs-600">  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
                 payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
                 WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
                 it's quite an awe-inspiring sight on the launch pad!</p>
             </div>
-          </div>
-        </div>
+          </article>
+          <article class="technology-description" aria-hidden="false" id="capsule-tab" role="tabpanel" tabindex="0">
+            <span>THE TERMINOLOGY...</span>
+            <h2 class="fs-heading-5 text-neutral">LAUNCH VEHICLE</h2>
+            <div class="technology-description-p | even-columns">
+              <p class="text-accent fs-600">  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+                payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+                WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+                it's quite an awe-inspiring sight on the launch pad!</p>
+            </div>
+          </article>
+          <article class="technology-description" aria-hidden="false" id="spaceport-tab" role="tabpanel" tabindex="0">
+            <span>THE TERMINOLOGY...</span>
+            <h2 class="fs-heading-5 text-neutral">LAUNCH VEHICLE</h2>
+            <div class="technology-description-p | even-columns">
+              <p class="text-accent fs-600">  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+                payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+                WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+                it's quite an awe-inspiring sight on the launch pad!</p>
+            </div>
+          </article>
       </div>
-    </div>
+    </section>
   </main>
   <script src="nav.js"></script>
+  <script src="tabs.js"></script>
 </body>
 </html>
