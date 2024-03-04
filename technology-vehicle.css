@@ -92,7 +92,6 @@ html,
 body {
   height: 100%;
   overflow-x: hidden;
-  overflow-y: hidden;
   scroll-behavior: smooth;
 }
 
@@ -391,8 +390,8 @@ header {
 main {
   position: relative;
   justify-items: center;
-  min-width: 100vw;
-  min-height: 100vh;
+  min-width: 100svw;
+  height: 100%;
 }
 
 main::before {
@@ -421,7 +420,7 @@ main::before {
       'image'
       'gallery'
       'article';
-  height: 100svh;
+  height: 100%;
   padding-block: 6em 2em;
 }
 
@@ -434,6 +433,10 @@ main::before {
 .section-title span {
   font-weight: bold;
   color: hsl(228, 2%, 46%);
+}
+
+.technology-img > img {
+  width: 100%;
 }
 
 .technology-menu {

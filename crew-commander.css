@@ -829,7 +829,7 @@ article[aria-hidden="false"] {
     max-width: 90%;
   }
 
-  .crew-description h1 {
+  .crew-description h2 {
     font-size: var(--fs-heading-3);
   }
 
@@ -848,8 +848,6 @@ article[aria-hidden="false"] {
   .destination-description-p p {
     margin-inline: 0;
   }
-
-  
 }
 
 @media (min-width: 1100px) {
