@@ -809,7 +809,7 @@ article[aria-hidden="false"] {
     --fs-secondary-heading: var(--fs-heading-3);
     --fs-heading-3: var(--fs-primary-heading);
     --fs-heading-5: 1.2rem;
-    --fs-600: 1.3rem;
+    --fs-600: 1.4rem;
     --fs-nav: var(--fs-nav);
   }
 }

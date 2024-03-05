@@ -856,7 +856,7 @@ article[aria-hidden="false"] {
     --fs-primary-heading: var(--fs-heading-2);
     --fs-secondary-heading: var(--fs-heading-3);
     --fs-heading-5: 1.2rem;
-    --fs-600: 1.3rem;
+    --fs-600: 1.4rem;
     --fs-nav: var(--fs-nav);
   }
 }

@@ -105,7 +105,7 @@ body {
 
 @media (min-width: 600px){
   body {
-    min-height: 100vh;
+    min-height: 100svh;
     display: grid;
     place-items: center;
 
@@ -424,7 +424,7 @@ main::before {
 
 .hero-content-p {
   padding-inline: .5em;
-  max-width: 50ch;
+  max-width: 65ch;
 }
 
 .hero-button {
@@ -683,11 +683,25 @@ main::before {
     margin-bottom: 5rem;
   }
 
-  .hero-button {
+  .hero-section a {
     align-self: end;
+  }
+  
+  .hero-button {
     max-width: 20rem;
     font-size: 2rem;
     margin-bottom: 5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --fs-body: var(--fs-600);
+    --fs-primary-heading: var(--fs-heading-2);
+    --fs-secondary-heading: var(--fs-heading-3);
+    --fs-heading-5: 1.2rem;
+    --fs-600: 1.4rem;
+    --fs-nav: var(--fs-nav);
   }
 }
 

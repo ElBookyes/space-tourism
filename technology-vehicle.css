@@ -454,12 +454,15 @@ main::before {
   border-radius: 50%;
   aspect-ratio: 1;
   border: 1px solid hsl(228, 2%, 46%);
+  background-color: transparent;
+  color: var(--clr-accent);
 }
 
 .technology-menu-item:hover,
 .technology-menu-item:focus {
   cursor: pointer;
   background: hsl(var(--clr-accent-hsl), .8);
+  color: #000;
 }
 
 .technology-menu-item[data-state="true"] {
@@ -689,7 +692,7 @@ article[aria-hidden="false"] {
   }
 
   .technology-description p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
