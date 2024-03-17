@@ -415,7 +415,6 @@ main::before {
 }
 
 .main-section {
-  height: 100vh;
   padding-block: 6em 2em; 
 }
 
@@ -780,6 +779,7 @@ article[aria-hidden="false"] {
   .main-content {
     text-align: left;
     max-width: 27.813rem;
+    padding-block: 12em 2em;
   }
 
   .destination-description-p {
