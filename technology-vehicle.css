@@ -390,8 +390,8 @@ header {
 main {
   position: relative;
   justify-items: center;
-  min-width: 100svw;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 main::before {
@@ -420,7 +420,6 @@ main::before {
       'image'
       'gallery'
       'article';
-  height: 100%;
   padding-block: 6em 2em;
 }
 
