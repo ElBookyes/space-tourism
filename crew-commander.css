@@ -389,6 +389,7 @@ header {
 /* Hero Section */
 
 main {
+  position: relative;
   justify-items: center;
   min-width: 100%;
   min-height: 100%;
@@ -423,7 +424,6 @@ main::before {
          'image'
          'tabs'
          'content';
-  height: 100vh;
   padding-block: 6em 2em; 
 }
 
